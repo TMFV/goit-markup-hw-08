@@ -1,0 +1,57 @@
+/*CLIENTS SECTION*/
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients {
+  flex-direction: column;
+  margin-bottom: 0px;
+
+  &__title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $h2-text-color;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+  }
+
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    fill: #afb1b8;
+    border-width: 1px;
+    border-style: solid;
+    padding: auto;
+
+    border-radius: 4px;
+    border-color: #afb1b8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: $Logo-blue-color;
+      border-color: $Logo-blue-color;
+    }
+  }
+
+  &__list {
+    display: inline-flex;
+    flex-direction: row;
+    margin-top: 50px;
+
+    .clients__item:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0px;
+    }
+  }
+}

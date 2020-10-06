@@ -1,0 +1,64 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Roboto;
+
+  &-section {
+    padding-top: 184px;
+    padding-bottom: 184px;
+    background-color: $new-bg-hero;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/image-for-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__title {
+    color: $Logo-white-color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  &__button {
+    box-sizing: content-box;
+    width: 200px;
+    height: 50px;
+    margin: 30px;
+    border: $Logo-blue-color;
+    border-radius: 4px;
+    background-color: $Logo-blue-color;
+    color: $Logo-white-color;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $hover-button-background-color;
+      color: $Logo-white-color;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.06em;
+    }
+  }
+}

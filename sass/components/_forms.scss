@@ -1,0 +1,195 @@
+.form-section {
+  padding: 0%;
+  margin: 0%;
+}
+.modal {
+  width: 528px;
+  height: 581px;
+
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  background-color: $Logo-white-color;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 221px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  &__title {
+    margin-top: 40px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $h2-text-color;
+  }
+  &__element {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &:focus-within > .modal__icon {
+      fill: $Logo-blue-color;
+      color: $Logo-blue-color;
+      border-color: $Logo-blue-color;
+    }
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+    padding-left: 30px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition-property: border;
+    transition-duration: 250ms;
+
+    &:focus {
+      border: 1px solid #2196f3;
+    }
+  }
+
+  &__textarea {
+    resize: none;
+    height: 120px;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin: 28px 0px 0px 0px;
+  }
+
+  &__label {
+    position: absolute;
+    transform: translateX(0px) translateY(10px);
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+
+    color: #757575;
+  }
+
+  &__icon {
+    position: absolute;
+    transform: translateX(14px) translateY(350%);
+    transition-property: fill;
+    transition-duration: 250ms;
+  }
+
+  /*
+  .form-div:focus-within > .form-label {
+    color: $Logo-blue-color;
+  }
+  */
+
+  &__apply-display {
+    display: inline-block;
+    margin-top: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  &__checkbox {
+    padding-top: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+
+    &:checked + .modal__apply-border {
+      border-color: $Logo-blue-color;
+      background-color: $Logo-blue-color;
+      background-image: url("../images/form-icons/icon-check.svg");
+      background-size: contain;
+      background-origin: border-box;
+    }
+  }
+  &__apply-border {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 4px;
+    transform: translateY(2px);
+  }
+
+  &__button-submit {
+    width: 200px;
+    height: 50px;
+    margin-top: 40px;
+    background: $Logo-blue-color;
+    border-color: $Logo-blue-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+
+    letter-spacing: 0.06em;
+    color: $Logo-white-color;
+    transition-property: background-color;
+    transition-duration: 250ms;
+
+      &:hover,
+      &:focus {
+        background-color: $hover-button-background-color;
+      }
+  }
+  
+}
+
+.close {
+  position: relative;
+
+  &__button {
+  position: absolute;
+  padding: 0%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $Logo-white-color;
+  transform: translateX(228px) translateY(-542px);
+  transition-property: fill;
+  transition-duration: 250ms;
+
+    &__button:hover,
+    &__button:focus {
+    fill: $Logo-blue-color;
+    }
+  }
+
+}
+
+
+/*обнуление*/
+input,
+textarea {
+  outline: none;
+}

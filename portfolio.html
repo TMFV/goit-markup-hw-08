@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--goit-markup-hw-08 DENYS TYMOFIEIEV-->
+<!--Страница Портфолио-->
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <!--Connect stylesheet file-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Main navigation block -->
+      <div class="header container">
+        <nav class="navigation">
+          <!--Logo links in the header-->
+          <a class="navigation__link" href="./">
+            <p class="logo">
+              <span class="logo__text-blue">Web</span><span class="logo__text-black">Studio</span>
+            </p>
+          </a>
+          <!--Navigation list links in header-->
+
+          <ul class="menu">
+            <li class="menu__list">
+              <div class="menu__list"><a class="menu__link" href="./">Студия</a></div>
+            </li>
+            <li class="menu__list">
+              <div class="menu__list-line"><a class="menu__link-active" href="./portfolio.html">Портфолио</a></div>
+            </li>
+            <li class="menu__list"><a class="menu__link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <!--Contacts links list in the header-->
+        <ul class="contacts">
+          <li class="contacts__list">
+            <a class="contacts__link" href="mailto:info@devstudio.com"><svg class="contacts__icon" width="16" height="12">
+                <use href="./images/sprite.svg#icon-hover"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__list">
+            <a class="contacts__link" href="tel:+380961111111"><svg class="contacts__icon" width="10" height="16">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <hr
+      class="container-head zero"
+      width="100%"
+      size="1"
+      color="#ececec"
+    />
+    <main class="main">
+      <!--main content new page-->
+      <h1 class="no-display">Портфолио</h1>
+      <!--Section button select-->
+      <div class="portfolio-menu container">
+        <ul class="portfolio-menu__list">
+          <li class="portfolio-menu__item"><button class="portfolio-menu__button">Все</button></li>
+          <li class="portfolio-menu__item"><button class="portfolio-menu__button">Веб-сайты</button></li>
+          <li class="portfolio-menu__item"><button class="portfolio-menu__button">Приложения</button></li>
+          <li class="portfolio-menu__item"><button class="portfolio-menu__button">Дизайн</button></li>
+          <li class="portfolio-menu__item"><button class="portfolio-menu__button">Маркетинг</button></li>
+        </ul>
+      </div>
+      <section class="portfolio">
+        <div class="container">
+          <!--Content-projects-section-->
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <a href=""
+                ><div class="project">
+                  <img
+                    src="images/img-portfolio/img-tehnocrack.jpg"
+                    alt="Приложение на ноутбуке"
+                  />
+                  <p class="project__description">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+
+                <h2 class="project__title">Технокряк</h2>
+                <p class="project__text">Веб-сайт</p>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              
+              <a href=""
+                ><div class="project"><img
+                  src="images/img-portfolio/img-poster-neworlean.jpg"
+                  alt="Баскетболисты на постере"
+                />
+                <h2 class="project__title">Постер New Orlean vs Golden Star</h2>
+                <p class="project__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              
+              <a href=""
+                ><div class="project"><img
+                  src="images/img-portfolio/img-rest-sea-food.jpg"
+                  alt="Логотип ресторана Seafood"
+                />
+                <h2 class="project__title">Ресторан Seafood</h2>
+                <p class="project__text">Приложение</p>
+                  </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+                            <a href=""
+                ><div class="project"><img
+                  src="images/img-portfolio/img-proj-prime.jpg"
+                  alt="Наушники"
+                />
+                <h2 class="project__title">Проект Prime</h2>
+                <p class="project__text">Маркетинг</p>
+                  </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              
+              <a href=""
+                ><div class="project">
+
+                <img
+                  src="images/img-portfolio/img-proj-boxes.jpg"
+                  alt="2 картонные коробки"
+                />
+                <h2 class="project__title">Проект Boxes</h2>
+                <p class="project__text">Приложение</p>
+              </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+                            <a href=""
+                ><div class="project"><img
+                  src="images/img-portfolio/img-inspiration-no-borders.jpg"
+                  alt="Приложение на MacBook"
+                />
+                <h2 class="project__title">Inspiration has no Borders</h2>
+                <p class="project__text">Веб-сайт</p>
+                  </div> 
+                
+              </a>
+            </li>
+            <li class="portfolio__item">
+              
+              <a href=""
+                ><div class="project"><img
+                  src="images/img-portfolio/img-limited-edition.jpg"
+                  alt="Книга"
+                />
+                <h2 class="project__title">Издание Limited Edition</h2>
+                <p class="project__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              
+              <a href=""
+                ><div class="project"><img
+                  src="images/img-portfolio/img-proj-lab.jpg"
+                  alt="Этикетка проекта LAB"
+                />
+                <h2 class="project__title">Проект LAB</h2>
+                <p class="project__text">Маркетинг</p>
+                  </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              
+              <a href=""
+                ><div class="project"><img
+                  src="images/img-portfolio/img-growing-business.jpg"
+                  alt="Приложение Growing Business на ноутбуке"
+                />
+                <h2 class="project__title">Growing Business</h2>
+                <p class="project__text">Приложение</p>
+                  </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-section">
+      <!--Logo links in the header-->
+      <div class="container footer">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="./">
+              <p class="logo-down">
+                <span class="logo-down__text-blue">Web</span><span class="logo-down__text-white">Studio</span>
+              </p>
+            </a>
+            <address class="address">
+              <p class="address__text">г. Киев, Бульвар Леси Украинки, 26</p>
+              <a class="address__link" href="mailto:info@example.com"> info@example.com </a>
+              <a class="address__link" href="tel:+380991111111"> +38 099 111 11 11 </a>
+            </address>
+          </li>
+          <li>
+            <p class="social-add">ПРИСОДЕНЯЙТЕСЬ</p>
+            <ul class="social-add__list">
+              <li class="social-add__item">
+                <a class="social-add__link" href="">
+                  <svg width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-add__item">
+                <a class="social-add__link" href="">
+                  <svg width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-add__item">
+                <a class="social-add__link" href="">
+                  <svg width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-add__item">
+                <a class="social-add__link" href="">
+                  <svg width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="subs">
+              <label class="subs__label" for="sum-mail">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+              <input class="subs__input" type="email" name="r-email" id="sub-mail" placeholder="E-mail" />
+    
+            </div>
+          <li>
+            <button type="submit" class="subs__button" id="subm-mail">
+              <span>Подписаться </span>
+              <svg class="subs__icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+    </body>
+    
+    </html>

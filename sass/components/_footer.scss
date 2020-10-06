@@ -1,0 +1,172 @@
+/*Елементи підвалу*/
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-header-background;
+}
+.footer {
+  display: flex;
+
+  align-items: flex-start;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+  }
+  &__item {
+    margin-right: 70px;
+  }
+}
+
+.address {
+  width: 231px;
+
+  &__text {
+    margin-bottom: 9px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $Logo-white-color;
+  }
+  &__link {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    margin-bottom: 9px;
+  }
+}
+
+/*Block ПОДПИСАТЬСЯ*/
+
+.social-add {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $Logo-white-color;
+
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 12px 12px 12px;
+
+    fill: $Logo-white-color;
+    border-width: 1px;
+    border-style: solid;
+
+    border-radius: 50%;
+    border-color: $footer-header-background;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition-property: fill border-color background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: $Logo-white-color;
+      border-color: $Logo-blue-color;
+      background-color: $Logo-blue-color;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+
+    & .social-add__item:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.subs {
+  margin-top: 8px;
+  height: 86px;
+  margin-left: 93px;
+
+  &__label {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: $Logo-white-color;
+  }
+  &__input {
+    width: 358px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    padding-left: 16px;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: border;
+    transition-duration: 250ms;
+
+    &:hover,
+    &:focus {
+      border: 1px solid #2196f3;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin-top: 46px;
+    margin-left: 12px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: $Logo-blue-color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+    letter-spacing: 0.06em;
+    color: $Logo-white-color;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    fill: white;
+
+    &:hover,
+    &:focus {
+      background-color: $hover-button-background-color;
+    }
+  }
+
+  &__icon {
+    margin-left: 10px;
+  }
+}
