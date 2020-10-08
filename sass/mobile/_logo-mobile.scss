@@ -1,0 +1,40 @@
+@media screen and (max-width: 480px){
+.logo {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+
+
+  &__text-blue {
+    color: $Logo-blue-color;
+  }
+  &__text-black {
+    color: $Logo-black-color;
+  }
+  &__text-white {
+    color: $Logo-white-color;
+  }
+
+  &-down {
+    margin: 0px 0px 20px 0px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+
+    &__text-blue {
+      color: $Logo-blue-color;
+    }
+    &__text-white {
+      color: $Logo-white-color;
+    }
+  }
+}
+}
