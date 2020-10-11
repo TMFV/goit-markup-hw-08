@@ -27,61 +27,50 @@
               <span class="logo__text-blue">Web</span><span class="logo__text-black">Studio</span>
             </p>
           </a>
-          <script src="./js/menu.js"></script>
-
-          <button type="button" 
-          class="menu-button" 
-           
-          aria-expanded="false"
-          aria-controls="menu-container" 
-          data-menu-button 
-          >
-            <svg class="mobile-modal__icon"
-             aria-label="Кнопка меню" 
-             width="24" heigth="16">
-              <use class="icon-menu" href="./images/sprite.svg#icon-menu_24px"></use>
-              <use class="icon-cross" href="./images/sprite.svg#icon-close_24px"></use>
+          <button class="menu-button" type="button" aria-label="Переключатель мобильного меню" aria-expanded="false"
+            aria-controls="menu-container" data-modal-open data-menu-button>
+            <svg width="24px" height="px">
+              <use class="icon-close" href="./images/sprite.svg#icon-close_24px">
+              </use>
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu_24px">
+              </use>
             </svg>
           </button>
-          <!--<button class="modal-mobile__button" type="button" data-modal-close1>
-            <svg class="mobile-modal__icon" width="19" heigth="19">
-             
-            </svg>
-          </button>!-->
         </div>
-      </div>
-      <!--Navigation list links in header-->
+        <!--Navigation list links in header-->
 
-      <div id="menu-container" class=" menu-container backdrop is-hidden" data-menu>
-        <div class="modal1">
-
-          <nav>
-            <ul class="menu">
-              <li class="menu__list">
-                <div class="menu__list-line"><a class="menu__link-active" href="./">Студия</a></div>
-              </li>
-              <li class="menu__list"><a class="menu__link" href="./portfolio.html">Портфолио</a></li>
-              <li class="menu__list"><a class="menu__link" href="">Контакты</a></li>
-            </ul>
-          </nav>
-          <!--Contacts links list in the header-->
-          <ul class="contacts">
-            <li class="contacts__list">
-              <a class="contacts__link" href="mailto:info@devstudio.com"><svg class="contacts__icon" width="16"
-                  height="12">
-                  <use href="./images/sprite.svg#icon-hover"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts__list">
-              <a class="contacts__link" href="tel:+380961111111"><svg class="contacts__icon" width="10" height="16">
-                  <use href="./images/sprite.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+        <div id="menu-container" class="menu-container backdrope is-hidden" data-modal data-menu>
+          <div class="modal">
+            <div class="modal__content">
+              <nav>
+                <ul class="menu">
+                  <li class="menu__list">
+                    <div class="menu__list-line"><a class="menu__link-active" href="./">Студия</a></div>
+                  </li>
+                  <li class="menu__list"><a class="menu__link" href="./portfolio.html">Портфолио</a></li>
+                  <li class="menu__list"><a class="menu__link" href="">Контакты</a></li>
+                </ul>
+              </nav>
+              <!--Contacts links list in the header-->
+              <ul class="contacts">
+                <li class="contacts__list">
+                  <a class="contacts__link" href="mailto:info@devstudio.com"><svg class="contacts__icon" width="16"
+                      height="12">
+                      <use href="./images/sprite.svg#icon-hover"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="contacts__list">
+                  <a class="contacts__link" href="tel:+380961111111"><svg class="contacts__icon" width="10" height="16">
+                      <use href="./images/sprite.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -486,10 +475,11 @@
         </li>
         <li>
           <div class="subs">
-            <label class="subs__label" for="sum-mail">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+            <label class="subs__label" for="sub-mail">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
             <input class="subs__input" type="email" name="r-email" id="sub-mail" placeholder="E-mail" />
 
           </div>
+        </li>
         <li>
           <button type="submit" class="subs__button" id="subm-mail">
             <span>Подписаться </span>
@@ -498,10 +488,10 @@
             </svg>
           </button>
         </li>
-        </li>
       </ul>
     </div>
   </footer>
+  <script src="./js/menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 

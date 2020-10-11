@@ -1,0 +1,125 @@
+@media screen and (max-width: 480px) {
+  
+
+  .menu-container{
+    position: relative;
+  }
+  
+  .modal{
+    display: flex;
+    position: absolute;
+    min-width: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+    max-height: 453px;
+    background-color: $Logo-white-color;
+    border-top: solid 1px #ECECEC;
+        
+  }
+ 
+  
+  body.modal-open{
+    overflow: hidden;
+  }
+
+
+.menu {
+  display: flex;
+ align-items: center ;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 60px 0px 52px 0px;
+  font-family: Roboto;
+  font-style: normal;
+ 
+
+  &__list {
+  box-sizing: content-box;
+  padding: 20px 0px 20px 0px;
+  position: relative;
+ 
+  
+  }
+
+  &__link {
+    box-sizing: content-box;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $h2-text-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link-active {
+    box-sizing: content-box;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $Logo-blue-color;
+
+    &:hover,
+    &:focus {
+      color: $Logo-blue-color;
+    }
+     &::after {
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    bottom: -8px;
+    left: 0px;
+    background-color: $Logo-blue-color;
+  }
+  }
+  &__list-line{
+    position: relative;
+  }
+   
+}
+
+    
+  
+/*Пошта та телефон в хедері*/
+.contacts {
+  display: block;
+  margin-bottom: 52px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+
+  &__list {
+    display: block;
+    padding: 8px 0px 8px 0px;
+  }
+  &__link {
+    color: $p-text-color;
+    fill: #757575;
+    transition-property: color fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $Logo-blue-color;
+      fill: $Logo-blue-color;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+
+}
+  }

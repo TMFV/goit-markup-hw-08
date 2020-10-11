@@ -1,0 +1,60 @@
+@media screen and (max-width: 480px) {
+
+.container{
+      display: block;
+      min-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+
+  }
+  .header{
+    position: fixed;
+    min-width: 100%;
+    background-color: $Logo-white-color;
+    border-bottom: 1px solid #ECECEC;
+      
+
+  }
+  .navigation__mobile{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-left: 15px;
+    }
+  
+  .menu-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    padding: auto;
+    background-color: transparent;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+    &:hover,
+    &:focus{
+    fill: $Logo-blue-color;
+    }
+  }
+
+    .icon-close{
+      display: none;
+    }
+
+    .menu-button.icon-close{
+      display: none;
+    }
+    .menu-button.is-open .icon-close{
+      display: block;
+    }
+    .menu-button.is-open .icon-menu{
+      display: none;
+    }
+}
