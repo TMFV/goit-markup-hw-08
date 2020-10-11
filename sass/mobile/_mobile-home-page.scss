@@ -1,78 +1,212 @@
 @media screen and (max-width: 480px) {
- .hero {
+
+  .logo-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mobile-link{
+    display: inline-block;
+    text-align: center;
+  }
+  /*Елементи підвалу*/
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-header-background;
+}
+.footer {
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+  &__item {
+     box-sizing: content-box;
+    margin-right: 0;
+  }
+}
+
+.address {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  min-height: 400px;
+  width: 450px;
+  margin-bottom: 51px;
 
-  font-family: Roboto;
+  &__text {
+    display: inline-block;
+    margin-bottom: 9px;
+    margin-top: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $Logo-white-color;
 
-  &-section {
-    background-color: $new-bg-hero;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url('../images/mobile/hero-banner.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
   }
-
-  @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero-section {
-  background-image: url('../images/mobile/hero-banner@2x.jpg');
+  &__link {
+    display: inline-block;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    margin-bottom: 9px;
   }
 }
-  &__title {
-    padding-top: 118px;
-    color: $Logo-white-color;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  }
-  &__button {
-    padding-left: auto;
-    padding-right: auto;
-    box-sizing: content-box;
-    width: 200px;
-    height: 50px;
-    margin: 30px;
-    border: $Logo-blue-color;
-    border-radius: 4px;
-    background-color: $Logo-blue-color;
-    color: $Logo-white-color;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.06em;
 
-    transition-property: background-color;
+/*Block ПОДПИСАТЬСЯ*/
+
+.social-add {
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $Logo-white-color;
+  &__item {
+    margin-bottom: 60px;
+  }
+
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 12px 12px 12px;
+
+    fill: $Logo-white-color;
+    border-width: 1px;
+    border-style: solid;
+
+    border-radius: 50%;
+    border-color: $footer-header-background;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition-property: fill border-color background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-      background-color: $hover-button-background-color;
-      color: $Logo-white-color;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 30px;
-      text-align: center;
-      letter-spacing: 0.06em;
+      fill: $Logo-white-color;
+      border-color: $Logo-blue-color;
+      background-color: $Logo-blue-color;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+
+    & .social-add__item:not(:last-child) {
+      margin-right: 10px;
     }
   }
 }
 
+.subs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 8px;
+  height: 86px;
+  margin-left: 0px;
+
+  &__label {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: $Logo-white-color;
   }
+  &__input {
+    width: 450px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    padding-left: 16px;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: border;
+    transition-duration: 250ms;
+
+    &:hover,
+    &:focus {
+      border: 1px solid #2196f3;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: 0;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: $Logo-blue-color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+    letter-spacing: 0.06em;
+    color: $Logo-white-color;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    fill: white;
+
+    &:hover,
+    &:focus {
+      background-color: $hover-button-background-color;
+    }
+  }
+
+  &__icon {
+    margin-left: 10px;
+  }
+}
+
+}
+
+  
+  
 

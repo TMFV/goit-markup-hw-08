@@ -1,0 +1,54 @@
+@media screen and (max-width: 480px) {
+ 
+    .advantage {
+      padding: 0 15px;
+    
+      &__icon {
+        display: flex;
+        width: 450px;
+        height: 120px;
+        background-color: #f5f4fa;
+        justify-content: center;
+        align-items: center;
+      }
+      &__image {
+        align-content: center;
+      }
+      &__title {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: $h2-text-color;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      &__text {
+        max-width: 450px;
+        color: $p-text-color;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+      }
+      &__list {
+        display: block;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &__list:last-child {
+        margin-bottom: 60px;
+      }
+      
+    }
+  }
+  
+    
+    
+  
+  
