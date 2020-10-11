@@ -1,4 +1,5 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
+
  body.modal-hero-open .overlay{
    display:block;
   height: 100%;
@@ -6,7 +7,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   z-index:300;
 }
- }
+ 
   .hero {
   display: block;
   margin-bottom: 60px;
@@ -88,3 +89,4 @@
   }
 }
 
+}

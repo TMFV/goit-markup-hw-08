@@ -1,8 +1,9 @@
+@media screen and (min-width: 1200px) {
 .form-section {
   padding: 0%;
   margin: 0%;
 }
-.modal {
+.modalhero {
   width: 528px;
   height: 581px;
 
@@ -40,7 +41,7 @@
     display: flex;
     flex-direction: column;
 
-    &:focus-within > .modal__icon {
+    &:focus-within > .modalhero__icon {
       fill: $Logo-blue-color;
       color: $Logo-blue-color;
       border-color: $Logo-blue-color;
@@ -120,7 +121,7 @@
     appearance: none;
     position: absolute;
 
-    &:checked + .modal__apply-border {
+    &:checked + .modalhero__apply-border {
       border-color: $Logo-blue-color;
       background-color: $Logo-blue-color;
       background-image: url("../images/form-icons/icon-check.svg");
@@ -192,4 +193,5 @@
 input,
 textarea {
   outline: none;
+}
 }

@@ -1,7 +1,5 @@
+@media screen and (min-width: 1200px) {
 /*Елементи підвалу*/
-.logo-down{
-justify-content: center;
-}
 .footer-section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -15,8 +13,6 @@ justify-content: center;
   &__list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    
     margin-top: 0px;
   }
   &__item {
@@ -52,7 +48,6 @@ justify-content: center;
 /*Block ПОДПИСАТЬСЯ*/
 
 .social-add {
-  display: flex;
   margin-top: 8px;
   margin-bottom: 20px;
   font-style: normal;
@@ -62,7 +57,6 @@ justify-content: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $Logo-white-color;
-  
 
   &__link {
     display: inline-flex;
@@ -99,7 +93,6 @@ justify-content: center;
     }
   }
 }
-
 
 .subs {
   margin-top: 8px;
@@ -177,4 +170,5 @@ justify-content: center;
   &__icon {
     margin-left: 10px;
   }
+}
 }

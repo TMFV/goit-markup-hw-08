@@ -1,109 +1,111 @@
-.team {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  &-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: $our-team-background-color;
-  }
-  &__title {
-    margin-bottom: 50px;
-    margin-top: 0;
-    color: $h2-text-color;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.03em;
-    text-align: center;
-  }
-  &__list {
-    display: flex;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
-
-    .team__item:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-  &__item {
-    max-width: 270px;
-    max-height: 428px;
-
-    background-color: $Logo-white-color;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
-
-  &__member {
-    padding-top: 30px;
-    margin-bottom: 10px;
-    margin-top: 0px;
-    color: $h2-text-color;
+@media screen and (min-width: 1200px) {
+  .team {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
+  
+    &-section {
+      padding-top: 94px;
+      padding-bottom: 94px;
+      background-color: $our-team-background-color;
+    }
+    &__title {
+      margin-bottom: 50px;
+      margin-top: 0;
+      color: $h2-text-color;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: 0.03em;
+      text-align: center;
+    }
+    &__list {
+      display: flex;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: space-between;
+  
+      .team__item:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+    &__item {
+      max-width: 270px;
+      max-height: 428px;
+  
+      background-color: $Logo-white-color;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+    }
+  
+    &__member {
+      padding-top: 30px;
+      margin-bottom: 10px;
+      margin-top: 0px;
+      color: $h2-text-color;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+    &__profession {
+      box-sizing: border-box;
+      padding-bottom: 16px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      color: $p-text-color;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
   }
-  &__profession {
-    box-sizing: border-box;
-    padding-bottom: 16px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    color: $p-text-color;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.03em;
-  }
-}
-
-/*Buttons -- Social -- Link -- TEAM*/
-
-.social-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-bottom: 30px;
-
-  .social-list__item :not(:last-child) {
-    margin-right: 10px;
-  }
-  &__link {
-    display: inline-flex;
+  
+  /*Buttons -- Social -- Link -- TEAM*/
+  
+  .social-list {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    fill: #afb1b8;
-    border-width: 1px;
-    border-style: solid;
-    padding: 12px 12px 12px 12px;
-    border-radius: 50%;
-    border-color: $Logo-white-color;
-    transition-property: color fill border-color background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      fill: $Logo-white-color;
-      border-color: $Logo-blue-color;
-      background-color: $Logo-blue-color;
+    padding-bottom: 30px;
+  
+    .social-list__item :not(:last-child) {
+      margin-right: 10px;
+    }
+    &__link {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      fill: #afb1b8;
+      border-width: 1px;
+      border-style: solid;
+      padding: 12px 12px 12px 12px;
+      border-radius: 50%;
+      border-color: $Logo-white-color;
+      transition-property: color fill border-color background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &:hover,
+      &:focus {
+        fill: $Logo-white-color;
+        border-color: $Logo-blue-color;
+        background-color: $Logo-blue-color;
+      }
     }
   }
 }

@@ -1,92 +1,95 @@
-.navigation {
-  display: flex;
-  align-items: center;
-
-  &__link {
-    display: block;
-    margin-right: 93px;
-  }
-}
-.header {
-  display: flex;
-  align-items: center;
-  max-height: 80px;
-
-  background-color: $Logo-white-color;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-/* МЕНЮ НАВІГАЦІЇ*/
-
-.menu {
-  display: flex;
-  padding-left: 0;
-
-  &__link {
-    color: $h2-text-color;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__link-active {
-    color: $Logo-blue-color;
-
-    &:hover,
-    &:focus {
-      color: $Logo-blue-color;
-    }
-  }
-
-  &__list-line::after {
-    content: "";
-    position: absolute;
-
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    bottom: -32px;
-    left: 0px;
-    background-color: $Logo-blue-color;
-  }
-
-  &__list {
-    position: relative;
-  }
-  .menu__list:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
-/*Пошта та телефон в хедері*/
-.contacts {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-
-  &__link {
+@media screen and (min-width: 1200px) {
+  .navigation {
     display: flex;
     align-items: center;
-    color: $p-text-color;
-    fill: #757575;
-    transition-property: color fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      color: $Logo-blue-color;
-      fill: $Logo-blue-color;
+  
+    &__link {
+      display: block;
+      margin-right: 93px;
     }
   }
-
-  &__icon {
-    margin-right: 10px;
+  
+  .header {
+    display: flex;
+    align-items: center;
+    max-height: 80px;
+  
+    background-color: $Logo-white-color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
-  .contacts__list:not(:last-child) {
-    margin-right: 50px;
+  /* МЕНЮ НАВІГАЦІЇ*/
+  
+  .menu {
+    display: flex;
+    padding-left: 0;
+  
+    &__link {
+      color: $h2-text-color;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link-active {
+      color: $Logo-blue-color;
+  
+      &:hover,
+      &:focus {
+        color: $Logo-blue-color;
+      }
+    }
+  
+    &__list-line::after {
+      content: "";
+      position: absolute;
+  
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      bottom: -32px;
+      left: 0px;
+      background-color: $Logo-blue-color;
+    }
+  
+    &__list {
+      position: relative;
+    }
+    .menu__list:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  
+  /*Пошта та телефон в хедері*/
+  .contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  
+    &__link {
+      display: flex;
+      align-items: center;
+      color: $p-text-color;
+      fill: #757575;
+      transition-property: color fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &:hover,
+      &:focus {
+        color: $Logo-blue-color;
+        fill: $Logo-blue-color;
+      }
+    }
+  
+    &__icon {
+      margin-right: 10px;
+    }
+    .contacts__list:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
