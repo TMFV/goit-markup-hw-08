@@ -1713,6 +1713,200 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .non-tablet-footer {
+    display: none;
+  }
+  .logo-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mobile-link {
+    display: inline-block;
+    text-align: center;
+  }
+  /*Елементи підвалу*/
+  .footer-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 76px;
+    padding-right: 89px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+  }
+  .footer__item {
+    box-sizing: content-box;
+    margin-right: 0;
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 240px;
+    margin-bottom: 51px;
+  }
+  .address__text {
+    display: inline-block;
+    margin-bottom: 9px;
+    margin-top: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #ffffff;
+  }
+  .address__link {
+    display: inline-block;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    margin-bottom: 9px;
+  }
+  /*Block ПОДПИСАТЬСЯ*/
+  .social-add {
+    display: block;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .social-add__item {
+    margin-bottom: 60px;
+  }
+  .social-add__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 12px 12px 12px;
+    fill: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #2f303a;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: fill border-color background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .social-add__link:hover, .social-add__link:focus {
+    fill: #ffffff;
+    border-color: #2196f3;
+    background-color: #2196f3;
+  }
+  .social-add__list {
+    display: flex;
+    flex-direction: row;
+  }
+  .social-add__list .social-add__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .subs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8px;
+    height: 86px;
+    margin-left: 0px;
+  }
+  .subs__label {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+  .subs__input {
+    width: 450px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    padding-left: 16px;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: border;
+    transition-duration: 250ms;
+  }
+  .subs__input:hover, .subs__input:focus {
+    border: 1px solid #2196f3;
+  }
+  .subs__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 0;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: #2196f3;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    fill: white;
+  }
+  .subs__button:hover, .subs__button:focus {
+    background-color: #188ce8;
+  }
+  .subs__icon {
+    margin-left: 10px;
+  }
+  .footer__item-subs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .advantage {
     padding-top: 94px;
