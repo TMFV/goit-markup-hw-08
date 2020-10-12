@@ -1,27 +1,33 @@
 @media screen and (min-width: 1200px) {
-  .navigation {
-    display: flex;
-    align-items: center;
-  
-    &__link {
-      display: block;
-      margin-right: 93px;
-    }
-  }
-  
-  .header {
-    display: flex;
-    align-items: center;
-    max-height: 80px;
-  
-    background-color: $Logo-white-color;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-  }
+      .menu-button{
+        display: none;
+      }
+      .header-mobile{
+        display:none
+      }
+      .navigation {
+        display: flex;
+        align-items: center;
+      
+        &__link {
+          display: block;
+          margin-right: 93px;
+        }
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        max-height: 80px;
+      
+        background-color: $Logo-white-color;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+      }
   /* МЕНЮ НАВІГАЦІЇ*/
   
   .menu {

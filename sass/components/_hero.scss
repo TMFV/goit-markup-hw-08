@@ -2,13 +2,19 @@
   .hero {
     display: block;
     font-family: Roboto;
+    margin-left: auto;
+    margin-right: auto ;
 
       &-section {
 
         padding-top: 184px;
         padding-bottom: 184px;
+        padding-left: auto;
+        padding-right: auto;
         background-color: $new-bg-hero;
-
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
@@ -56,8 +62,11 @@
               url(../images/tablet/hero-banner@2x.jpg);
           }
           }
-    */
+          */
           @media screen and (min-width: 1200px) {
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
           background-image: linear-gradient(
               rgba(47, 48, 58, 0.4),
               rgba(47, 48, 58, 0.4)
@@ -67,12 +76,16 @@
           @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             background-image: linear-gradient(
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
               ),
               url(../images/hero-banner@2x.jpg);}
           }
+        }
 
       &__title {
         color: $Logo-white-color;
@@ -86,10 +99,13 @@
         text-transform: uppercase;
       }
         &__button {
+          display: block;
           box-sizing: content-box;
           width: 200px;
           height: 50px;
-          margin: 30px;
+          margin-top: 30px;
+          margin-left: auto;
+          margin-right: auto;
           border: $Logo-blue-color;
           border-radius: 4px;
           background-color: $Logo-blue-color;
@@ -118,4 +134,3 @@
         }
     }
   }
-}
