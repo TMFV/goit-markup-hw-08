@@ -536,7 +536,7 @@
 
 @media screen and (max-width: 767px) {
   .advantage {
-    padding: 0 15px;
+    padding: 30px 15px 0px 15px;
   }
   .advantage__icon {
     display: flex;
