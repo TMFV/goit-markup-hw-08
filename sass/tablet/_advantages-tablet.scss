@@ -1,0 +1,54 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .advantage {
+      padding-top: 45px;
+      padding-bottom: 45px;
+      
+    
+      &__icon {
+        display: flex;
+        width: 354px;
+        height: 120px;
+        background-color: #f5f4fa;
+        justify-content: center;
+        align-items: center;
+      }
+      &__image {
+        align-content: center;
+      }
+      &__title {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: $h2-text-color;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+      &__text {
+        display: block;
+        width: 354px;
+        
+        color: $p-text-color;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+      }
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        justify-content: space-between;
+      }
+      &__item{
+        margin: 15px;
+      }
+    }
+    .section-wedo{
+      display: none;
+    }
+  }

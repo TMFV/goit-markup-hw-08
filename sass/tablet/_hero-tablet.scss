@@ -1,0 +1,93 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .hero {
+        display: block;
+        font-family: Roboto;
+        margin-left: auto;
+        margin-right: auto ;
+    
+          &-section {
+            min-width: 768px;
+            padding-top: 118px;
+            padding-bottom: 118px;
+            padding-left: auto;
+            padding-right: auto;
+            background-color: $new-bg-hero;
+            background-size: 768px 400px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+              ),
+              url(../images/hero-banner.jpg);            
+              
+              @media screen and (min-width: 768px)
+              {
+              background-image: linear-gradient(
+                  rgba(47, 48, 58, 0.4),
+                  rgba(47, 48, 58, 0.4)
+                ),
+                url(../images/tablet/hero-banner.jpg);
+            
+    
+              @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                  ),
+                  url(../images/tablet/hero-banner@2x.jpg);
+              }
+              }
+              
+             
+            }
+    
+          &__title {
+            color: $Logo-white-color;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 42px;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+          }
+            &__button {
+              display: block;
+              box-sizing: content-box;
+              width: 200px;
+              height: 50px;
+              margin-top: 30px;
+              margin-left: auto;
+              margin-right: auto;
+              border: $Logo-blue-color;
+              border-radius: 4px;
+              background-color: $Logo-blue-color;
+              color: $Logo-white-color;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 16px;
+              line-height: 30px;
+              letter-spacing: 0.06em;
+    
+              transition-property: background-color;
+              transition-duration: 250ms;
+              transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+                &:hover,
+                &:focus {
+                  background-color: $hover-button-background-color;
+                  color: $Logo-white-color;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 16px;
+                  line-height: 30px;
+                  text-align: center;
+                  letter-spacing: 0.06em;
+                }
+            }
+        } 
+}
