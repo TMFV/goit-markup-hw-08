@@ -14,20 +14,19 @@
     }
     /*Елементи підвалу*/
   .footer-section {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: auto;
-    padding-left: auto;
 
-    padding-top: 60px;
-    padding-bottom: 60px;
     background-color: $footer-header-background;
+
+    
 
   }
   .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: $footer-header-background;
+  padding-top: 60px;
+  padding-bottom: 60px;
   
   
     &__list {
@@ -148,6 +147,7 @@
       color: $Logo-white-color;
     }
     &__input {
+      min-width: 50%;
       width: 450px;
       height: 50px;
       margin-top: 20px;

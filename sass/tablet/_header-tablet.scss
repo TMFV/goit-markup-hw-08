@@ -108,8 +108,8 @@
   &__icon {
     margin-right: 10px;
   }
-  .contacts__list:not(:last-child) {
-    margin-right: 50px;
+  .contacts__list{
+    margin-right: 0;
   }
 }
 .tablet__link{

@@ -11,19 +11,24 @@
   .hero {
   display: block;
   margin-bottom: 60px;
+  
   max-width: 767px;
-  width: auto;
+  width: 480px;
+  min-width: 320px;
   height: auto;
   font-family: Roboto;
   margin-left: auto;
   margin-right: auto ;
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
 
   &-section {
     display: block;
     max-width: 767px;
     margin-left: auto;
     margin-right: auto ;
-   
+    min-width: 320px;
     width: 480px;
     height: 400px;
     background-color: $new-bg-hero;

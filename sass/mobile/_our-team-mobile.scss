@@ -8,11 +8,16 @@
       line-height: 19px;
       text-align: center;
       letter-spacing: 0.03em;
+      background-color: $our-team-background-color;
+      background-size: 480px;
+      padding-top: 60px;
+      padding-bottom: 30px;
     
       &-section {
-        padding-top: 60px;
-        padding-bottom: 30px;
+
         background-color: $our-team-background-color;
+        background-size: 480px;
+
       }
       &__title {
         margin-bottom: 30px;
