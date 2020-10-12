@@ -25,70 +25,71 @@
   
   body.modal-open{
     overflow: hidden;
+    
   }
 
 
-.menu {
-  display: flex;
- align-items: center ;
-  flex-direction: column;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 60px 0px 52px 0px;
-  font-family: Roboto;
-  font-style: normal;
- 
+    .menu {
+      display: flex;
+      align-items: center ;
+      flex-direction: column;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 60px 0px 52px 0px;
+      font-family: Roboto;
+      font-style: normal;
+    
 
-  &__list {
-  box-sizing: content-box;
-  padding: 20px 0px 20px 0px;
-  position: relative;
-  
-  }
+          &__list {
+          box-sizing: content-box;
+          padding: 20px 0px 20px 0px;
+          position: relative;
+          
+          }
 
-  &__link {
-    box-sizing: content-box;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: $h2-text-color;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__link-active {
-    box-sizing: content-box;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: $Logo-blue-color;
+          &__link {
+            box-sizing: content-box;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: $h2-text-color;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          &__link-active {
+            box-sizing: content-box;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: $Logo-blue-color;
 
-    &:hover,
-    &:focus {
-      color: $Logo-blue-color;
-    }
-     &::after {
-    content: "";
-    position: absolute;
+                &:hover,
+                &:focus {
+                  color: $Logo-blue-color;
+                }
 
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    bottom: -8px;
-    left: 0px;
-    background-color: $Logo-blue-color;
-  }
-  }
+                &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                border-radius: 2px;
+                bottom: -8px;
+                left: 0px;
+                background-color: $Logo-blue-color;
+              }
+        }
 
-  &__list-line{
-    position: relative;
-  }
-   
-}
+        &__list-line{
+            position: relative;
+        }
+          
+        }
 
     
   
@@ -127,4 +128,6 @@
   }
 
 }
+
   }
+

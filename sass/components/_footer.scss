@@ -1,5 +1,8 @@
 @media screen and (min-width: 1200px) {
 /*Елементи підвалу*/
+div.tablet-footer{
+  display: none;
+}
 .footer-section {
   padding-top: 60px;
   padding-bottom: 60px;

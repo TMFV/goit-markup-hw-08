@@ -1,5 +1,8 @@
 @media screen and (max-width: 767px) {
 
+  div.tablet-footer{
+    display: none;
+  }
     .logo-mobile{
       display: flex;
       flex-direction: column;
@@ -11,9 +14,15 @@
     }
     /*Елементи підвалу*/
   .footer-section {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: auto;
+    padding-left: auto;
+
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $footer-header-background;
+
   }
   .footer {
   display: flex;
@@ -204,7 +213,7 @@
     }
   }
   
-  }
+}
   
     
     
